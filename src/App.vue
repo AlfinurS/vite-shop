@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <HeaderComponent></HeaderComponent>
+    <main>
+      <router-view></router-view>
+    </main>
+    <!-- <footerComponent></footerComponent> -->
   </div>
 </template>
 
 <script lang="ts">
-import HeaderComponent from './components/HeaderComponent.vue'
+import HeaderComponent from "./components/HeaderComponent.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    HeaderComponent
-  }
-})
+    HeaderComponent,
+  },
+});
 </script>
-
