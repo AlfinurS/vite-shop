@@ -1,11 +1,10 @@
 <template>
-        <div class="header__logo">
-          <img src="img/svg/logo.svg" alt="logo" width="44" height="38">
-        </div>
+  <div class="header__logo">
+    <img src="img/svg/logo.svg" alt="logo" width="44" height="38" />
+  </div>
 </template>
 
 <script lang="ts">
-
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "Logo",
@@ -17,11 +16,9 @@ export default defineComponent({
     },
   },
 });
-
 </script>
 
 <style lang="scss">
-
 .header {
   &__logo {
     display: flex;

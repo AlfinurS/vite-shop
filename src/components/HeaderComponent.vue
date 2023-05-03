@@ -1,18 +1,17 @@
 <template>
-   <header class="header">
+  <header class="header">
     <div class="header__box">
       <div class="header__wrapp">
-          <!-- <router-link :to="{ name: 'Accaunt' }">
+        <!-- <router-link :to="{ name: 'Accaunt' }">
             <Logo class="header__wrapp"></Logo>
           </router-link> -->
-          123
+        123
       </div>
     </div>
   </header>
 </template>
 
 <script lang="ts">
-
 import { defineComponent } from "vue";
 import Logo from "@/components/Logo.vue";
 
@@ -21,13 +20,11 @@ export default defineComponent({
   components: {
     Logo,
   },
-  })
-
+});
 </script>
 
 <style lang="scss">
 @import "@/assets/scss/style.scss";
-
 
 /* .header {
   background-color: $black-color;
