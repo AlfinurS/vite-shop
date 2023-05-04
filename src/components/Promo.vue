@@ -1,13 +1,18 @@
 <template>
-  <div class="header__logo">
-    <img src="img/svg/logo.svg" alt="logo" width="44" height="38" />
-  </div>
+  <img
+    class="promo__picture"
+    src="img/new_product/main_2.webp"
+    alt="man"
+    width="800"
+    height="765"
+  />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+
 export default defineComponent({
-  name: "Logo",
+  name: "Promo",
   components: {},
   props: {
     src: {

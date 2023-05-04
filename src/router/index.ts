@@ -27,6 +27,16 @@ const routes = [
     name: "AccessoriesPage",
     component: () => import("@/pages/AccessoriesPage.vue"),
   },
+  {
+    path: "/bags",
+    name: "BagsPage",
+    component: () => import("@/pages/BagsPage.vue"),
+  },
+  {
+    path: "/catalog",
+    name: "CatalogPage",
+    component: () => import("@/pages/CatalogPage.vue"),
+  },
 ];
 
 const router = createRouter({
