@@ -9,8 +9,8 @@
 </template>
 
 <script lang="ts">
-import HeaderComponent from "./components/HeaderComponent.vue";
 import { defineComponent } from "vue";
+import HeaderComponent from "./components/HeaderComponent.vue";
 
 export default defineComponent({
   name: "App",
