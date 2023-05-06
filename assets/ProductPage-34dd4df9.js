@@ -1,0 +1,1 @@
+import{d as e,_ as o,c as t,o as c}from"./index-c7b1efd8.js";const n=e({name:"ProductPage",components:{}});function r(a,s,p,d,_,u){return c(),t("div",null,"ProductPage")}const i=o(n,[["render",r],["__file","D:/GB/vite-project/src/pages/ProductPage.vue"]]);export{i as default};
