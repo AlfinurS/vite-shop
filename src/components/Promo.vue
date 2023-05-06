@@ -1,7 +1,7 @@
 <template>
   <img
     class="promo__picture"
-    src="img/new_product/main_2.webp"
+    src="/img/new_product/main_2.webp"
     alt="man"
     width="800"
     height="765"

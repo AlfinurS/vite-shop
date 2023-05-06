@@ -29,7 +29,7 @@
           <a href="#" class="stock__item-link">
             <img
               class="stock__image"
-              src="img/banner_mini1.png"
+              src="/img/banner_mini1.png"
               alt="man"
               width="360"
               height="260"
@@ -44,7 +44,7 @@
           <a href="#" class="stock__item-link">
             <img
               class="stock__image"
-              src="img/banner_mini2.png"
+              src="/img/banner_mini2.png"
               alt="man"
               width="360"
               height="260"
@@ -59,7 +59,7 @@
           <a href="#" class="stock__item-link">
             <img
               class="stock__image"
-              src="img/banner_mini3.png"
+              src="/img/banner_mini3.png"
               alt="man"
               width="360"
               height="260"
@@ -74,11 +74,11 @@
           <a href="#" class="stock__link-wide">
             <picture class="">
               <source
-                srcset="img/banner_small.jpg"
+                srcset="/img/banner_small.jpg"
                 media="(max-width: 1199px)"
               />
-              <source srcset="img/banner.png" media="(min-width: 1200px)" />
-              <img class="stock__image" src="img/banner.png" alt="man" />
+              <source srcset="/img/banner.png" media="(min-width: 1200px)" />
+              <img class="stock__image" src="/img/banner.png" alt="man" />
             </picture>
           </a>
         </li>
@@ -95,7 +95,7 @@
         <div class="catalog__item-wrapper">
           <img
             class="catalog__image"
-            src="img/new_product/men3.webp"
+            src="/img/new_product/men3.webp"
             alt="product"
           />
           <div class="catalog__hover">
@@ -103,7 +103,7 @@
               <button class="btn-plain" type="button">
                 <img
                   class="btn-plain-icon"
-                  src="img/svg/bag2.svg"
+                  src="/img/svg/bag2.svg"
                   alt="bag"
                   width="24"
                   height="24"
@@ -126,7 +126,7 @@
         <div class="catalog__item-wrapper">
           <img
             class="catalog__image"
-            src="img/new_product/men1.webp"
+            src="/img/new_product/men1.webp"
             alt="product"
           />
           <div class="catalog__hover">
@@ -134,7 +134,7 @@
               <button class="btn-plain" type="button">
                 <img
                   class="btn-plain-icon"
-                  src="img/svg/bag2.svg"
+                  src="/img/svg/bag2.svg"
                   alt="bag"
                   width="24"
                   height="24"
@@ -157,7 +157,7 @@
         <div class="catalog__item-wrapper">
           <img
             class="catalog__image"
-            src="img/new_product/men7.webp"
+            src="/img/new_product/men7.webp"
             alt="product"
           />
           <div class="catalog__hover">
@@ -165,7 +165,7 @@
               <button class="btn-plain" type="button">
                 <img
                   class="btn-plain-icon"
-                  src="img/svg/bag2.svg"
+                  src="/img/svg/bag2.svg"
                   alt="bag"
                   width="24"
                   height="24"
@@ -188,7 +188,7 @@
         <div class="catalog__item-wrapper">
           <img
             class="catalog__image"
-            src="img/new_product/women1.webp"
+            src="/img/new_product/women1.webp"
             alt="product"
           />
           <div class="catalog__hover">
@@ -196,7 +196,7 @@
               <button class="btn-plain" type="button">
                 <img
                   class="btn-plain-icon"
-                  src="img/svg/bag2.svg"
+                  src="/img/svg/bag2.svg"
                   alt="bag"
                   width="24"
                   height="24"
@@ -219,7 +219,7 @@
         <div class="catalog__item-wrapper">
           <img
             class="catalog__image"
-            src="img/new_product/women2.webp"
+            src="/img/new_product/women2.webp"
             alt="product"
           />
           <div class="catalog__hover">
@@ -227,7 +227,7 @@
               <button class="btn-plain" type="button">
                 <img
                   class="btn-plain-icon"
-                  src="img/svg/bag2.svg"
+                  src="/img/svg/bag2.svg"
                   alt="bag"
                   width="24"
                   height="24"
@@ -250,7 +250,7 @@
         <div class="catalog__item-wrapper">
           <img
             class="catalog__image"
-            src="img/new_product/women3.webp"
+            src="/img/new_product/women3.webp"
             alt="product"
           />
           <div class="catalog__hover">
@@ -258,7 +258,7 @@
               <button class="btn-plain" type="button">
                 <img
                   class="btn-plain-icon"
-                  src="img/svg/bag2.svg"
+                  src="/img/svg/bag2.svg"
                   alt="bag"
                   width="24"
                   height="24"
@@ -285,7 +285,7 @@
   <section class="advantage">
     <div class="advantage__wrapp">
       <div class="advantage__delivery">
-        <img class="advantage__pic" src="img/svg/icon1.svg" alt="delivery" />
+        <img class="advantage__pic" src="/img/svg/icon1.svg" alt="delivery" />
         <h2 class="advantage__titel">Free Delivery</h2>
         <p class="advantage__text">
           Worldwide delivery on all. Authorit tively morph next-generation innov
@@ -293,7 +293,7 @@
         </p>
       </div>
       <div class="advantage__sales">
-        <img class="advantage__pic" src="img/svg/icon2.svg" alt="sales" />
+        <img class="advantage__pic" src="/img/svg/icon2.svg" alt="sales" />
         <h2 class="advantage__titel">Sales & discounts</h2>
         <p class="advantage__text">
           Worldwide delivery on all. Authorit tively morph next-generation innov
@@ -301,7 +301,7 @@
         </p>
       </div>
       <div class="advantage__assurance">
-        <img class="advantage__pic" src="img/svg/icon3.svg" alt="assurance" />
+        <img class="advantage__pic" src="/img/svg/icon3.svg" alt="assurance" />
         <h2 class="advantage__titel">Quality assurance</h2>
         <p class="advantage__text">
           Worldwide delivery on all. Authorit tively morph next-generation innov

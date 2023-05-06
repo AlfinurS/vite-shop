@@ -1,6 +1,6 @@
 <template>
   <button class="header__button" type="button">
-    <img src="img/svg/bag.svg" alt="log" width="27" height="28" />
+    <img src="/img/svg/bag.svg" alt="log" width="27" height="28" />
   </button>
 </template>
 

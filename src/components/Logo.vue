@@ -1,6 +1,6 @@
 <template>
   <div class="header__logo">
-    <img src="img/svg/logo.svg" alt="logo" width="44" height="38" />
+    <img src="/img/svg/logo.svg" alt="logo" width="44" height="38" />
   </div>
 </template>
 

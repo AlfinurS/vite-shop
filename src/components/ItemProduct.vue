@@ -3,7 +3,7 @@
     <a href="#" class="catalog__image-wrapper">
       <img
         class="catalog__image"
-        src="img/new_product/men1.webp"
+        src="/img/new_product/men1.webp"
         alt="product"
       />
     </a>
@@ -12,7 +12,7 @@
         <button class="btn-plain" type="button">
           <img
             class="btn-plain-icon"
-            src="img/svg/bag2.svg"
+            src="/img/svg/bag2.svg"
             alt="bag"
             width="24"
             height="24"

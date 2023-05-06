@@ -25,7 +25,7 @@
         <span class="goods__button-text">FILTER</span>
         <img
           class="goods__button-icon"
-          src="img/svg/filter.svg"
+          src="/img/svg/filter.svg"
           alt="filter"
           width="15"
           height="10"
@@ -34,7 +34,7 @@
       <button class="goods__filter-hid" type="button">
         <img
           class="goods__button-icon"
-          src="img/svg/filter__big.svg"
+          src="/img/svg/filter__big.svg"
           alt="bag"
           width="37"
           height="25"
@@ -49,7 +49,7 @@
                 <div class="catalog__image-wrapper">
                   <img
                     class="catalog__image"
-                    src="img/new_product/men7.webp"
+                    src="/img/new_product/men7.webp"
                     alt="product"
                   />
                 </div>
@@ -59,7 +59,7 @@
                   <button class="btn-plain" type="button">
                     <img
                       class="btn-plain-icon"
-                      src="img/svg/bag2.svg"
+                      src="/img/svg/bag2.svg"
                       alt="bag"
                       width="24"
                       height="24"
@@ -85,7 +85,7 @@
                 <div class="catalog__image-wrapper">
                   <img
                     class="catalog__image"
-                    src="img/new_product/men4.webp"
+                    src="/img/new_product/men4.webp"
                     alt="product"
                   />
                 </div>
@@ -95,7 +95,7 @@
                   <button class="btn-plain" type="button">
                     <img
                       class="btn-plain-icon"
-                      src="img/svg/bag2.svg"
+                      src="/img/svg/bag2.svg"
                       alt="bag"
                       width="24"
                       height="24"
@@ -121,7 +121,7 @@
                 <div class="catalog__image-wrapper">
                   <img
                     class="catalog__image"
-                    src="img/new_product/men8.webp"
+                    src="/img/new_product/men8.webp"
                     alt="product"
                   />
                 </div>
@@ -131,7 +131,7 @@
                   <button class="btn-plain" type="button">
                     <img
                       class="btn-plain-icon"
-                      src="img/svg/bag2.svg"
+                      src="/img/svg/bag2.svg"
                       alt="bag"
                       width="24"
                       height="24"
@@ -157,7 +157,7 @@
                 <div class="catalog__image-wrapper">
                   <img
                     class="catalog__image"
-                    src="img/new_product/men6.webp"
+                    src="/img/new_product/men6.webp"
                     alt="product"
                   />
                 </div>
@@ -167,7 +167,7 @@
                   <button class="btn-plain" type="button">
                     <img
                       class="btn-plain-icon"
-                      src="img/svg/bag2.svg"
+                      src="/img/svg/bag2.svg"
                       alt="bag"
                       width="24"
                       height="24"
@@ -193,7 +193,7 @@
                 <div class="catalog__image-wrapper">
                   <img
                     class="catalog__image"
-                    src="img/new_product/men9.webp"
+                    src="/img/new_product/men9.webp"
                     alt="product"
                   />
                 </div>
@@ -203,7 +203,7 @@
                   <button class="btn-plain" type="button">
                     <img
                       class="btn-plain-icon"
-                      src="img/svg/bag2.svg"
+                      src="/img/svg/bag2.svg"
                       alt="bag"
                       width="24"
                       height="24"
@@ -230,7 +230,7 @@
   <section class="advantage">
     <div class="advantage__wrapp">
       <div class="advantage__delivery">
-        <img class="advantage__pic" src="./img/svg/icon1.svg" alt="delivery" />
+        <img class="advantage__pic" src="/img/svg/icon1.svg" alt="delivery" />
         <h2 class="advantage__titel">Free Delivery</h2>
         <p class="advantage__text">
           Worldwide delivery on all. Authorit tively morph next-generation innov
@@ -238,7 +238,7 @@
         </p>
       </div>
       <div class="advantage__sales">
-        <img class="advantage__pic" src="./img/svg/icon2.svg" alt="sales" />
+        <img class="advantage__pic" src="/img/svg/icon2.svg" alt="sales" />
         <h2 class="advantage__titel">Sales & discounts</h2>
         <p class="advantage__text">
           Worldwide delivery on all. Authorit tively morph next-generation innov
@@ -246,7 +246,7 @@
         </p>
       </div>
       <div class="advantage__assurance">
-        <img class="advantage__pic" src="./img/svg/icon3.svg" alt="assurance" />
+        <img class="advantage__pic" src="/img/svg/icon3.svg" alt="assurance" />
         <h2 class="advantage__titel">Quality assurance</h2>
         <p class="advantage__text">
           Worldwide delivery on all. Authorit tively morph next-generation innov
