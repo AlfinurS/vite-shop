@@ -25,14 +25,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import ItemProduct from "@/components/ItemProduct.vue";
-
-export type productType = {
-  id: number;
-  image: string;
-  title: string;
-  content: string;
-  price: number;
-};
+import { axios } from "@/main";
+import { productType } from "@/types/common";
 
 export default defineComponent({
   name: "ProductsList",
@@ -44,56 +38,7 @@ export default defineComponent({
   data() {
     return {
       search: "",
-      products: [
-        {
-          id: 1,
-          image: "",
-          title: "ELLERY X M'O CAPSULE",
-          content:
-            "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
-          price: 52.0,
-        },
-        {
-          id: 2,
-          image: "",
-          title: "ELLERY X M'O CAPSULE",
-          content:
-            "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
-          price: 52.0,
-        },
-        {
-          id: 3,
-          image: "",
-          title: "ELLERY X M'O CAPSULE",
-          content:
-            "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
-          price: 52.0,
-        },
-        {
-          id: 4,
-          image: "",
-          title: "ELLERY X M'O CAPSULE",
-          content:
-            "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
-          price: 52.0,
-        },
-        {
-          id: 5,
-          image: "",
-          title: "ELLERY X M'O CAPSULE",
-          content:
-            "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
-          price: 52.0,
-        },
-        {
-          id: 6,
-          image: "",
-          title: "ELLERY X M'O CAPSULE",
-          content:
-            "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
-          price: 52.0,
-        },
-      ] as productType[],
+      products: [] as productType[],
     };
   },
 
@@ -108,6 +53,25 @@ export default defineComponent({
       }
       return this.products;
     },
+  },
+
+  methods: {
+    loadProducts() {
+      const url = "products.json";
+      axios
+        .get(url)
+        .then(({ data }) => {
+          this.products = data.products;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
+
+  mounted() {
+    //console.log("ok");
+    this.loadProducts();
   },
 });
 </script>

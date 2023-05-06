@@ -33,35 +33,18 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, PropType } from "vue";
+import { productType } from "@/types/common";
+import { productConst } from "@/constants/common";
 
 export default defineComponent({
   name: "ItemProduct",
   components: {},
   props: {
     dataProps: {
-      type: Object,
-      default: () => ({}),
+      type: Object as PropType<productType>,
+      default: () => productConst,
     },
-    /* image: {
-      type: String,
-    },
-    price: {
-      type: Number,
-    },
-    title: {
-      type: String,
-    },
-    text: {
-      type: String,
-    },
-    id: {
-      type: Number,
-    },
-    src: {
-      type: String,
-      default: "",
-    }, */
   },
 });
 </script>
