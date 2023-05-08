@@ -8,13 +8,7 @@
             v-for="product in filteredProducts"
             :key="product.id"
           >
-            <ItemProduct
-              :image="product.image"
-              :price="product.price"
-              :title="product.title"
-              :content="product.content"
-              :id="product.id"
-            ></ItemProduct>
+            <ItemProduct :dataProps="product"></ItemProduct>
           </li>
         </ul>
       </div>
@@ -33,7 +27,6 @@ export default defineComponent({
   components: {
     ItemProduct,
   },
-  props: {},
 
   data() {
     return {
