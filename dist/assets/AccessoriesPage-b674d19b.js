@@ -1,1 +1,0 @@
-import{d as e,_ as s,c,o}from"./index-8381557e.js";const n=e({name:"AccessoriesPage",components:{}});function r(t,a,i,p,_,f){return o(),c("div",null,"AccessoriesPage")}const l=s(n,[["render",r],["__file","D:/GB/vite-project/src/pages/AccessoriesPage.vue"]]);export{l as default};
