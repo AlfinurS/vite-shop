@@ -6,4 +6,5 @@ export const productConst: productType = Object.freeze({
   title: "",
   content: "",
   price: 0,
+  collection: [],
 });
