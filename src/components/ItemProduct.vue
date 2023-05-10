@@ -3,7 +3,11 @@
     :to="{ name: 'ProductPage', params: { id: dataProps.id } }"
     class="catalog__item-wrapper"
   >
-    <img class="catalog__image" :src="dataProps.image" :alt="dataProps.title" />
+    <img
+      class="catalog__image"
+      :src="`img/new_product/${dataProps.image}`"
+      :alt="dataProps.title"
+    />
 
     <div class="catalog__hover">
       <div class="catalog__add-wrapper"></div>

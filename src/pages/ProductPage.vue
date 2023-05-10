@@ -24,6 +24,7 @@
             aria-label="Slide 3"
           ></button>
         </div>
+
         <div class="carousel-inner">
           <div
             v-for="(image, index) in currentProduct.collection"
@@ -33,31 +34,14 @@
           >
             <img
               class="bd-placeholder-img carousel__img"
-              :src="image"
+              :src="`img/new_product/${image}`"
               alt="image"
               width="597"
               height="724"
             />
           </div>
-          <!-- <div class="carousel-item">
-            <img
-              class="bd-placeholder-img carousel__img"
-              src="/img/new_product/men1.webp"
-              alt="man coat"
-              width="597"
-              height="724"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="bd-placeholder-img carousel__img"
-              :src="currentProduct.image"
-              :alt="currentProduct.title"
-              width="597"
-              height="724"
-            />
-          </div> -->
         </div>
+
         <button
           class="carousel-control-prev"
           type="button"
@@ -78,13 +62,6 @@
         </button>
       </div>
     </div>
-    <!--     <div class="catalog__item-wrapper">
-      <img
-        class="catalog__image"
-        :src="currentProduct.image"
-        :alt="currentProduct.title"
-      />
-    </div> -->
   </div>
   <div v-else>
     <p>Нет данных</p>
@@ -133,7 +110,6 @@ export default defineComponent({
   },
 
   mounted() {
-    //console.log("ok");
     this.loadProducts();
   },
 });
