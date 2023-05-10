@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 1,
-      "image": "img/new_product/men1.webp",
-      "collection": ["img/new_product/men1.webp", "img/new_product/men7.webp", "img/new_product/men4.webp"],
+      "image": "men1.webp",
+      "collection": ["men1.webp", "men7.webp", "men4.webp"],
       "title": "Quilted Coat",
       "content":
         "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
@@ -11,8 +11,8 @@
     },
     {
       "id": 2,
-      "image": "img/new_product/men7.webp",
-      "collection": ["img/new_product/men7.webp", "/img/new_product/men1.webp", "/img/new_product/men4.webp"],
+      "image": "men7.webp",
+      "collection": ["men7.webp", "men1.webp", "men4.webp"],
       "title": "Basic T-shirt",
       "content":
         "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
@@ -20,8 +20,8 @@
     },
     {
       "id": 3,
-      "image": "img/new_product/men4.webp",
-      "collection": ["/img/new_product/men4.webp", "/img/new_product/men1.webp", "/img/new_product/men7.webp"],
+      "image": "men4.webp",
+      "collection": ["men4.webp", "men1.webp", "men7.webp"],
       "title": "Top Coat",
       "content":
         "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
@@ -29,8 +29,8 @@
     },
     {
       "id": 4,
-      "image": "img/new_product/men8.webp",
-      "collection": ["/img/new_product/men8.webp", "/img/new_product/men6.webp", "/img/new_product/men9.webp"],
+      "image": "men8.webp",
+      "collection": ["men8.webp", "men6.webp", "men9.webp"],
       "title": "Essential Black Quilted Coat",
       "content":
         "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
@@ -38,8 +38,8 @@
     },
     {
       "id": 5,
-      "image": "img/new_product/men6.webp",
-      "collection": ["/img/new_product/men6.webp", "/img/new_product/men8.webp", "/img/new_product/men9.webp"],
+      "image": "men6.webp",
+      "collection": ["men6.webp", "men8.webp", "men9.webp"],
       "title": "Black Hooded Coat",
       "content":
         "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
@@ -47,8 +47,8 @@
     },
     {
       "id": 6,
-      "image": "img/new_product/men9.webp",
-      "collection": ["/img/new_product/men9.webp", "/img/new_product/men8.webp", "/img/new_product/men6.webp"],
+      "image": "men9.webp",
+      "collection": ["men9.webp", "men8.webp", "men6.webp"],
       "title": "Black wool sheepskin Coat",
       "content":
         "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
