@@ -34,7 +34,7 @@
           >
             <img
               class="bd-placeholder-img carousel__img"
-              :src="`img/new_product/${image}`"
+              :src="getImage(image)"
               alt="image"
               width="597"
               height="724"
@@ -103,9 +103,13 @@ export default defineComponent({
         .then(({ data }) => {
           this.products = data.products;
         })
-        .catch((error) => {
-          console.log(error);
+        .catch(() => {
+          //console.log(error);
         });
+    },
+
+    getImage(image) {
+      return `${import.meta.env.BASE_URL}/img/new_product/${image}`;
     },
   },
 
