@@ -1,1 +1,0 @@
-import{d as e,_ as a,c as s,o}from"./index-32d7a130.js";const n=e({name:"BagsPage",components:{}});function t(c,r,p,_,g,f){return o(),s("div",null,"BagsPage")}const d=a(n,[["render",t],["__file","D:/GB/vite-project/src/pages/BagsPage.vue"]]);export{d as default};
