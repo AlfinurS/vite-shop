@@ -11,7 +11,6 @@
 
     <div class="catalog__hover">
       <div class="catalog__add-wrapper"></div>
-      <BtnAddComponent></BtnAddComponent>
     </div>
   </router-link>
   <div class="catalog__content">
@@ -21,6 +20,7 @@
       arbiter of cool Kym Ellery teams up with Moda Operandi.
     </p>
     <p class="catalog__content-price">$ {{ dataProps.price }}</p>
+    <BtnAddComponent></BtnAddComponent>
   </div>
 </template>
 
