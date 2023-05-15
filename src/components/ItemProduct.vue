@@ -11,6 +11,7 @@
 
     <div class="catalog__hover">
       <div class="catalog__add-wrapper"></div>
+      <BtnAddComponent></BtnAddComponent>
     </div>
   </router-link>
   <div class="catalog__content">
@@ -27,10 +28,13 @@
 import { defineComponent, PropType } from "vue";
 import { productType } from "@/types/common";
 import { productConst } from "@/constants/common";
+import BtnAddComponent from "@/components/BtnAddComponent.vue";
 
 export default defineComponent({
   name: "ItemProduct",
-  components: {},
+  components: {
+    BtnAddComponent,
+  },
   props: {
     dataProps: {
       type: Object as PropType<productType>,

@@ -7,13 +7,13 @@
         </router-link>
         <div class="header__menu-list">
           <iconBurger
-            @click="isShowMenu = !isShowMenu"
             class="header__menu-item header__burger-btn"
+            @click="toggleDrop"
             width="18"
             :height="18"
           ></iconBurger>
           <div class="header__nav-wrap">
-            <MenuHeader v-if="isShowMenu"></MenuHeader>
+            <MenuHeader id="menu__header" v-if="isShowMenu"></MenuHeader>
           </div>
           <div class="header__menu-item">
             <router-link :to="{ name: 'ProfilePage' }">
@@ -53,6 +53,42 @@ export default defineComponent({
     return {
       isShowMenu: false,
     };
+  },
+  methods: {
+    toggleDrop() {
+      if (!this.isShowMenu) {
+        this.isShowMenu = true;
+        setTimeout(() => {
+          window.addEventListener("click", this.awayClick);
+        }, 0);
+      } else {
+        this.isShowMenu = false;
+        window.removeEventListener("click", this.awayClick);
+      }
+    },
+
+    awayClick(e: MouseEvent) {
+      const selectOpened: any = document.querySelector("#menu__header");
+      if (!selectOpened) return;
+      const clickX = e.pageX;
+      const clickY = e.pageY;
+      const dropLeft = selectOpened.offsetLeft;
+      const dropRight = selectOpened.offsetLeft + selectOpened.clientWidth;
+      const dropTop = selectOpened.offsetTop;
+      const dropBottom = selectOpened.offsetTop + selectOpened.clientHeight;
+      if (
+        clickX < dropLeft ||
+        clickX > dropRight ||
+        clickY < dropTop ||
+        clickY > dropBottom
+      ) {
+        this.toggleDrop();
+      }
+    },
+  },
+
+  unmounted() {
+    window.removeEventListener("click", this.awayClick);
   },
 });
 </script>

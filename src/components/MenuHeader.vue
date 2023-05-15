@@ -6,12 +6,11 @@
         <p class="header__navigation-subtitle">man</p>
         <ul class="header__navigation-sublist">
           <li class="header__navigation-link link">
-            <router-link :to="{ name: 'BagsPage' }">Bags</router-link>
-          </li>
-          <li class="header__navigation-link link">
             <router-link :to="{ name: 'CatalogPage' }">Denim</router-link>
           </li>
-          <li class="header__navigation-link link">T-Shirts</li>
+          <li class="header__navigation-link link">
+            <router-link :to="{ name: 'CatalogPage' }">T-Shirts</router-link>
+          </li>
         </ul>
       </li>
       <li class="header__navigation-item">
@@ -22,20 +21,14 @@
               >Accessories</router-link
             >
           </li>
-          <li class="header__navigation-link link">Bags</li>
-          <li class="header__navigation-link link">Denim</li>
-          <li class="header__navigation-link link">T-Shirts</li>
-          <li class="header__navigation-link link">Shirts</li>
-        </ul>
-      </li>
-      <li class="header__navigation-item">
-        <p class="header__navigation-subtitle">kids</p>
-        <ul class="header__navigation-sublist">
-          <li class="header__navigation-link link">Accessories</li>
-          <li class="header__navigation-link link">Bags</li>
-          <li class="header__navigation-link link">Denim</li>
-          <li class="header__navigation-link link">T-Shirts</li>
-          <li class="header__navigation-link link">Shirts</li>
+          <li class="header__navigation-link">
+            <router-link :to="{ name: 'AccessoriesPage' }">Denim</router-link>
+          </li>
+          <li class="header__navigation-link">
+            <router-link :to="{ name: 'AccessoriesPage' }"
+              >T-Shirts</router-link
+            >
+          </li>
         </ul>
       </li>
     </ul>
@@ -44,6 +37,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+
 export default defineComponent({
   name: "MenuHeader",
   components: {},
