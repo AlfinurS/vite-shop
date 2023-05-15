@@ -284,6 +284,10 @@
       line-height: 19px;
       text-transform: uppercase;
       color: $pink_text-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
     }
   }
   &__headline {

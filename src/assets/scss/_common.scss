@@ -28,14 +28,9 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 auto;
 }
 .btn-plain {
-  border: 1px solid $white-color;
-  background: transparent;
   font-size: 14px;
-  color: $white-color;
-  padding-left: 15px;
+  color: $grey-text-color;
   padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: inline-flex;
   align-items: center;
   cursor: pointer;

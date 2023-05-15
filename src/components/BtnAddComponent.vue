@@ -1,6 +1,8 @@
 <template>
-  <img src="img/svg/cart.svg" alt="log" width="24" height="24" />
-  <span class="btn-plain-text">Add to Cart</span>
+  <div class="btn-plain">
+    <img src="img/svg/cart.svg" alt="log" width="20" height="20" />
+    <span>Add to Cart</span>
+  </div>
 </template>
 
 <script lang="ts">
