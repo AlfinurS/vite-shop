@@ -85,201 +85,15 @@
       </ul>
     </div>
   </div>
+
   <section class="catalog box">
     <h2 class="catalog__headline">Fetured Items</h2>
     <p class="catalog__text">
       Shop for items based on what we featured in this week
     </p>
-    <ul class="catalog__list">
-      <li class="catalog__item">
-        <div class="catalog__item-wrapper">
-          <img
-            class="catalog__image"
-            src="/img/new_product/men3.webp"
-            alt="product"
-          />
-          <div class="catalog__hover">
-            <div class="catalog__add-wrapper">
-              <button class="btn-plain" type="button">
-                <img
-                  class="btn-plain-icon"
-                  src="/img/svg/bag2.svg"
-                  alt="bag"
-                  width="24"
-                  height="24"
-                />
-                <span class="btn-plain-text">Add to Cart</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__content">
-          <p class="catalog__content-name">ellery x m'o capsule</p>
-          <p class="catalog__content-text">
-            Known for her sculptural takes on traditional tailoring, Australian
-            arbiter of cool Kym Ellery teams up with Moda Operandi.
-          </p>
-          <p class="catalog__content-price">$52.00</p>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item-wrapper">
-          <img
-            class="catalog__image"
-            src="/img/new_product/men1.webp"
-            alt="product"
-          />
-          <div class="catalog__hover">
-            <div class="catalog__add-wrapper">
-              <button class="btn-plain" type="button">
-                <img
-                  class="btn-plain-icon"
-                  src="/img/svg/bag2.svg"
-                  alt="bag"
-                  width="24"
-                  height="24"
-                />
-                <span class="btn-plain-text">Add to Cart</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__content">
-          <p class="catalog__content-name">ellery x m'o capsule</p>
-          <p class="catalog__content-text">
-            Known for her sculptural takes on traditional tailoring, Australian
-            arbiter of cool Kym Ellery teams up with Moda Operandi.
-          </p>
-          <p class="catalog__content-price">$52.00</p>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item-wrapper">
-          <img
-            class="catalog__image"
-            src="/img/new_product/men7.webp"
-            alt="product"
-          />
-          <div class="catalog__hover">
-            <div class="catalog__add-wrapper">
-              <button class="btn-plain" type="button">
-                <img
-                  class="btn-plain-icon"
-                  src="/img/svg/bag2.svg"
-                  alt="bag"
-                  width="24"
-                  height="24"
-                />
-                <span class="btn-plain-text">Add to Cart</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__content">
-          <p class="catalog__content-name">ellery x m'o capsule</p>
-          <p class="catalog__content-text">
-            Known for her sculptural takes on traditional tailoring, Australian
-            arbiter of cool Kym Ellery teams up with Moda Operandi.
-          </p>
-          <p class="catalog__content-price">$52.00</p>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item-wrapper">
-          <img
-            class="catalog__image"
-            src="/img/new_product/women1.webp"
-            alt="product"
-          />
-          <div class="catalog__hover">
-            <div class="catalog__add-wrapper">
-              <button class="btn-plain" type="button">
-                <img
-                  class="btn-plain-icon"
-                  src="/img/svg/bag2.svg"
-                  alt="bag"
-                  width="24"
-                  height="24"
-                />
-                <span class="btn-plain-text">Add to Cart</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__content">
-          <p class="catalog__content-name">ellery x m'o capsule</p>
-          <p class="catalog__content-text">
-            Known for her sculptural takes on traditional tailoring, Australian
-            arbiter of cool Kym Ellery teams up with Moda Operandi.
-          </p>
-          <p class="catalog__content-price">$52.00</p>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item-wrapper">
-          <img
-            class="catalog__image"
-            src="/img/new_product/women2.webp"
-            alt="product"
-          />
-          <div class="catalog__hover">
-            <div class="catalog__add-wrapper">
-              <button class="btn-plain" type="button">
-                <img
-                  class="btn-plain-icon"
-                  src="/img/svg/bag2.svg"
-                  alt="bag"
-                  width="24"
-                  height="24"
-                />
-                <span class="btn-plain-text">Add to Cart</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__content">
-          <p class="catalog__content-name">ellery x m'o capsule</p>
-          <p class="catalog__content-text">
-            Known for her sculptural takes on traditional tailoring, Australian
-            arbiter of cool Kym Ellery teams up with Moda Operandi.
-          </p>
-          <p class="catalog__content-price">$52.00</p>
-        </div>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__item-wrapper">
-          <img
-            class="catalog__image"
-            src="/img/new_product/women3.webp"
-            alt="product"
-          />
-          <div class="catalog__hover">
-            <div class="catalog__add-wrapper">
-              <button class="btn-plain" type="button">
-                <img
-                  class="btn-plain-icon"
-                  src="/img/svg/bag2.svg"
-                  alt="bag"
-                  width="24"
-                  height="24"
-                />
-                <span class="btn-plain-text">Add to Cart</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__content">
-          <p class="catalog__content-name">ellery x m'o capsule</p>
-          <p class="catalog__content-text">
-            Known for her sculptural takes on traditional tailoring, Australian
-            arbiter of cool Kym Ellery teams up with Moda Operandi.
-          </p>
-          <p class="catalog__content-price">$52.00</p>
-        </div>
-      </li>
-    </ul>
+    <ProductsList></ProductsList>
     <a class="btn-primary catalog__btn-more" href="catalog.html"
-      ><div>Browse All Product</div></a
+      >Browse All Product</a
     >
   </section>
   <section class="advantage">
@@ -315,11 +129,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Promo from "@/components/Promo.vue";
+import ProductsList from "@/components/ProductsList.vue";
 
 export default defineComponent({
   name: "HomePage",
   components: {
     Promo,
+    ProductsList,
   },
 });
 </script>

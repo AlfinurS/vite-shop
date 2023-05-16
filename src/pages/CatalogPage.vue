@@ -20,7 +20,7 @@
     </div>
   </section>
 
-  <ProductsList></ProductsList>
+  <ProductsList class="goods__card"></ProductsList>
 
   <section class="advantage">
     <div class="advantage__wrapp">
