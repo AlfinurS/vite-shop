@@ -1,27 +1,29 @@
 <template>
-  <router-link
-    :to="{ name: 'ProductPage', params: { id: dataProps.id } }"
-    class="catalog__item-wrapper"
-  >
-    <img
-      class="catalog__image"
-      :src="`img/new_product/${dataProps.image}`"
-      :alt="dataProps.title"
-    />
+  <div>
+    <router-link
+      :to="{ name: 'ProductPage', params: { id: dataProps.id } }"
+      class="catalog__item-wrapper"
+    >
+      <img
+        class="catalog__image"
+        :src="`img/new_product/${dataProps.image}`"
+        :alt="dataProps.title"
+      />
 
-    <div class="catalog__hover">
-      <div class="catalog__add-wrapper"></div>
-    </div>
-  </router-link>
-  <div class="catalog__content">
-    <p class="catalog__content-name">{{ dataProps.title }}</p>
-    <p class="catalog__content-text">
-      Known for her sculptural takes on traditional tailoring, Australian
-      arbiter of cool Kym Ellery teams up with Moda Operandi.
-    </p>
-    <div class="catalog__content-price">
-      <p>$ {{ dataProps.price }}</p>
-      <BtnAddComponent></BtnAddComponent>
+      <div class="catalog__hover">
+        <div class="catalog__add-wrapper"></div>
+      </div>
+    </router-link>
+    <div class="catalog__content">
+      <p class="catalog__content-name">{{ dataProps.title }}</p>
+      <p class="catalog__content-text">
+        Known for her sculptural takes on traditional tailoring, Australian
+        arbiter of cool Kym Ellery teams up with Moda Operandi.
+      </p>
+      <div class="catalog__content-price">
+        <p>$ {{ dataProps.price }}</p>
+        <BtnAddComponent @click="addProduct(dataProps)"></BtnAddComponent>
+      </div>
     </div>
   </div>
 </template>
@@ -41,6 +43,18 @@ export default defineComponent({
     dataProps: {
       type: Object as PropType<productType>,
       default: () => productConst,
+    },
+  },
+  data() {
+    return {
+      products: [] as productType[],
+      cart: [],
+    };
+  },
+
+  methods: {
+    addProduct(dataProps) {
+      console.log(dataProps);
     },
   },
 });
