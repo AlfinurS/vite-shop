@@ -5,7 +5,9 @@
       <nav>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="./index.html">home /</a>
+            <router-link class="navigation__link" :to="{ name: 'HomePage' }"
+              >home/
+            </router-link>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">men /</a>

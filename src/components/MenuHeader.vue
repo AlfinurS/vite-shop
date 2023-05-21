@@ -17,17 +17,13 @@
         <p class="header__navigation-subtitle">woman</p>
         <ul class="header__navigation-sublist">
           <li class="header__navigation-link">
-            <router-link :to="{ name: 'AccessoriesPage' }"
-              >Accessories</router-link
-            >
+            <router-link :to="{ name: 'CatalogPage' }">Accessories</router-link>
           </li>
           <li class="header__navigation-link">
-            <router-link :to="{ name: 'AccessoriesPage' }">Denim</router-link>
+            <router-link :to="{ name: 'CatalogPage' }">Denim</router-link>
           </li>
           <li class="header__navigation-link">
-            <router-link :to="{ name: 'AccessoriesPage' }"
-              >T-Shirts</router-link
-            >
+            <router-link :to="{ name: 'CatalogPage' }">T-Shirts</router-link>
           </li>
         </ul>
       </li>

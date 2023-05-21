@@ -30,6 +30,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
+import { mapActions, mapGetters } from "vuex";
 import { productType } from "@/types/common";
 import { productConst } from "@/constants/common";
 import BtnAddComponent from "@/components/BtnAddComponent.vue";
@@ -45,16 +46,26 @@ export default defineComponent({
       default: () => productConst,
     },
   },
+  emits: ["addProduct"],
   data() {
     return {
       products: [] as productType[],
-      cart: [],
     };
   },
 
+  computed: {
+    ...mapGetters({
+      cartProducts: "cart/cartProducts",
+    }),
+  },
+
   methods: {
+    ...mapActions({
+      addCartProduct: "cart/addCartProduct",
+    }),
+
     addProduct(dataProps) {
-      console.log(dataProps);
+      this.addCartProduct(dataProps);
     },
   },
 });

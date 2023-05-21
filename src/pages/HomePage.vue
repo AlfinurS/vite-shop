@@ -92,9 +92,13 @@
       Shop for items based on what we featured in this week
     </p>
     <ProductsList></ProductsList>
-    <a class="btn-primary catalog__btn-more" href="catalog.html"
-      >Browse All Product</a
+
+    <router-link
+      :to="{ name: 'CatalogPage' }"
+      class="btn-primary catalog__btn-more"
     >
+      Browse All Product
+    </router-link>
   </section>
   <section class="advantage">
     <div class="advantage__wrapp">
