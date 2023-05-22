@@ -46,7 +46,7 @@ export default defineComponent({
       default: () => productConst,
     },
   },
-  emits: ["addProduct"],
+
   data() {
     return {
       products: [] as productType[],

@@ -1,14 +1,134 @@
 <template>
+  <section class="navigation">
+    <div class="navigation__wrapper">
+      <h2 class="navigation__titel">shopping cart</h2>
+      <nav>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <router-link class="navigation__link" :to="{ name: 'HomePage' }"
+              >home/
+            </router-link>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#"></a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="#"
+              >shopping cart</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
   <section class="cart box">
-    <div class="cart__product"></div>
-    <ul>
-      <li class="cart__item" v-for="product in cartProducts" :key="product.id">
-        <div :dataProps="product.id">{{ product.id }}</div>
-        Количество {{ product.quantity }}
-        <button @click="addProduct(product)">add</button>
-        <button @click="deleteProduct(product)">delete</button>
-      </li>
-    </ul>
+    <div class="cart__wrapper">
+      <div class="cart__product">
+        <ul class="cart__list">
+          <li
+            class="cart__item"
+            v-for="product in cartProducts"
+            :key="product.id"
+          >
+            <router-link
+              :to="{ name: 'ProductPage', params: { id: product.id } }"
+              class=""
+            >
+              <img
+                class="cart__image-wrapper"
+                :src="`img/new_product/${product.image}`"
+                :alt="product.title"
+              />
+            </router-link>
+
+            <div class="cart__content-wrapp">
+              <div class="cart__name-wrapp">
+                <h2 class="cart__content-name">{{ product.title }}</h2>
+              </div>
+              <ul class="cart__content-list">
+                <li class="cart__content-item">
+                  Price:
+                  <span class="cart__content-pink"
+                    >$ {{ product.price * product.quantity }}</span
+                  >
+                </li>
+                <li class="cart__content-item">
+                  Quantity:
+                  <button
+                    @click="deleteProduct(product)"
+                    class="cart__btn"
+                    type="button"
+                  >
+                    <img
+                      src="/img/svg/ic_round-minus.svg"
+                      alt="minus"
+                      width="24"
+                      height="24"
+                    />
+                  </button>
+
+                  <span class="cart__content-text">{{ product.quantity }}</span>
+                  <button
+                    @click="addProduct(product)"
+                    class="cart__btn"
+                    type="button"
+                  >
+                    <img
+                      src="/img/svg/ic_round-plus.svg"
+                      alt="plus"
+                      width="24"
+                      height="24"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cart__form-box">
+        <form action="#" class="form">
+          <fieldset class="form-fieldest">
+            <legend class="form-headline">shipping adress</legend>
+            <input
+              class="form-input cart__form-input"
+              type="text"
+              placeholder="Bangladesh"
+            />
+            <input
+              class="form-input cart__form-input"
+              type="text"
+              placeholder="State"
+            />
+            <input
+              class="form-input cart__form-input"
+              type="text"
+              placeholder="Postcode / Zip"
+            />
+            <button class="form-btn cart__btn-small link" type="button">
+              get a quote
+            </button>
+          </fieldset>
+        </form>
+        <div class="cart__order-wrapp">
+          <div class="cart__order-box">
+            <div class="cart__order">
+              <div class="cart__text-wrapp">
+                <span class="cart__text-small">sub total</span>
+                <span class="cart__text-small">$900</span>
+              </div>
+              <div class="cart__text-wrapp cart__text-wrapp--end">
+                <span class="cart__order-text">grand total</span>
+                <span class="cart__order-text cart__order-pink">$900</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn-primary cart__submit" type="button">
+            proceed to checkout
+          </button>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 

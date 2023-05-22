@@ -43,15 +43,13 @@
       padding-bottom: 14px;
     }
   }
-/*   &__nav-wrap {
-    display: none;
-  } */
   &__burger-btn:hover .header__nav-wrap {
     display: block;
   }
   &__navigation {
     position: absolute;
-    z-index: 1;
+    z-index: 100;
+    box-shadow: 1px 1px 7px -1px rgb(0 0 0 / 14%);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -60,7 +58,7 @@
     background-color:$white-color;
     color: $black-color;
     width: 232px;
-    min-height: 400px;
+    min-height: 300px;
 
     &-title {
       font-size: 14px;
@@ -88,10 +86,11 @@
       margin-bottom: 20px;
       margin-left: 54px;
     }
-  }
-  &__navigation-link {
-    margin-bottom: 22px;
-    cursor: pointer;
+    &-link a {
+      color: $grey-text-color;
+      margin-bottom: 22px;
+      cursor: pointer;
+    }
   }
   &__close {
     margin-bottom: 16px;

@@ -7,7 +7,7 @@
         </router-link>
         <div class="header__menu-list">
           <iconBurger
-            class="header__menu-item header__burger-btn"
+            class=""
             @click="toggleDrop"
             width="18"
             :height="18"

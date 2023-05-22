@@ -32,7 +32,7 @@
         <div class="footer__holder-box">
           <div class="footer__holder-wrapper">
             <span class="footer__holder-text"
-              >© 2021 Brand All Rights Reserved.</span
+              >© 2023 Brand All Rights Reserved.</span
             >
             <ul class="footer__list">
               <li class="footer__item">
