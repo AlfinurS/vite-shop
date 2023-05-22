@@ -24,6 +24,12 @@
   <section class="cart box">
     <div class="cart__wrapper">
       <div class="cart__product">
+        <div v-if="cartProducts.length === 0">
+          <p class="cart__content-item">Cart is empty</p>
+          <span class="cart__content-item"
+            >Select products to continue shopping</span
+          >
+        </div>
         <ul class="cart__list">
           <li
             class="cart__item"
@@ -115,11 +121,15 @@
             <div class="cart__order">
               <div class="cart__text-wrapp">
                 <span class="cart__text-small">sub total</span>
-                <span class="cart__text-small">$900</span>
+                <span class="cart__text-small"></span>
               </div>
               <div class="cart__text-wrapp cart__text-wrapp--end">
-                <span class="cart__order-text">grand total</span>
-                <span class="cart__order-text cart__order-pink">$900</span>
+                <span class="cart__order-text">grand total</span>&nbsp;
+                <span
+                  class="cart__order-text cart__order-pink"
+                  v-if="renderCart !== 0"
+                  >{{ renderCart }}</span
+                >
               </div>
             </div>
           </div>
@@ -160,6 +170,14 @@ export default defineComponent({
     ...mapGetters({
       cartProducts: "cart/cartProducts",
     }),
+
+    renderCart() {
+      let sumCart = 0;
+      this.cartProducts.forEach((product) => {
+        sumCart = sumCart + product.price * product.quantity;
+      });
+      return sumCart;
+    },
   },
 
   methods: {
