@@ -75,7 +75,7 @@
           <span class="btn-plain-text registration__btn-text">join now</span>
           <img
             class="btn-plain-icon"
-            src="img/svg/arrow_long.svg"
+            src="/img/svg/arrow_long.svg"
             alt="bag"
             width="17"
             height="10"

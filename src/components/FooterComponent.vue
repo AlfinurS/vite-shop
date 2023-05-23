@@ -39,7 +39,7 @@
                 <a class="footer__link" href="#">
                   <img
                     class="footer__link-icon"
-                    src="img/svg/2.svg"
+                    src="/img/svg/2.svg"
                     alt="search"
                     width="32"
                     height="32"
@@ -49,7 +49,7 @@
                 <a class="footer__link" href="#">
                   <img
                     class="footer__link-icon"
-                    src="img/svg/4.svg"
+                    src="/img/svg/4.svg"
                     alt="search"
                     width="32"
                     height="32"
@@ -59,7 +59,7 @@
                 <a class="footer__link" href="#">
                   <img
                     class="footer__link-icon"
-                    src="img/svg/5.svg"
+                    src="/img/svg/5.svg"
                     alt="search"
                     width="32"
                     height="32"
@@ -69,7 +69,7 @@
                 <a class="footer__link" href="#">
                   <img
                     class="footer__link-icon"
-                    src="img/svg/6.svg"
+                    src="/img/svg/6.svg"
                     alt="search"
                     width="32"
                     height="32"
