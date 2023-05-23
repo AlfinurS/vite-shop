@@ -31,7 +31,7 @@
           <li class="registration__item">
             <img
               class="btn-plain-icon"
-              src="img/svg/check-mark.svg"
+              src="/img/svg/check-mark.svg"
               alt="check"
               width="20"
               height="16"
@@ -41,7 +41,7 @@
           <li class="registration__item">
             <img
               class="btn-plain-icon"
-              src="img/svg/check-mark.svg"
+              src="/img/svg/check-mark.svg"
               alt="check"
               width="20"
               height="16"
@@ -51,7 +51,7 @@
           <li class="registration__item">
             <img
               class="btn-plain-icon"
-              src="img/svg/check-mark.svg"
+              src="/img/svg/check-mark.svg"
               alt="check"
               width="20"
               height="16"
@@ -61,7 +61,7 @@
           <li class="registration__item">
             <img
               class="btn-plain-icon"
-              src="img/svg/check-mark.svg"
+              src="/img/svg/check-mark.svg"
               alt="check"
               width="20"
               height="16"
@@ -71,7 +71,7 @@
           <li class="registration__item">
             <img
               class="btn-plain-icon"
-              src="img/svg/check-mark.svg"
+              src="/img/svg/check-mark.svg"
               alt="check"
               width="20"
               height="16"

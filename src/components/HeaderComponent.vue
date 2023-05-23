@@ -20,10 +20,13 @@
               <iconProfile></iconProfile>
             </router-link>
           </div>
-          <div class="header__menu-item">
+          <div class="header__menu-item cart__indicator-parent">
             <router-link :to="{ name: 'CartPage' }">
               <iconCart></iconCart>
             </router-link>
+            <div class="cart__indicator" v-if="cartProducts.length !== 0">
+              {{ cartProducts.length }}
+            </div>
           </div>
         </div>
       </div>
@@ -33,6 +36,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { mapActions, mapGetters } from "vuex";
 import Logo from "@/components/Logo.vue";
 import iconBurger from "@/components/iconBurger.vue";
 import iconProfile from "@/components/iconProfile.vue";
@@ -54,7 +58,24 @@ export default defineComponent({
       isShowMenu: false,
     };
   },
+
+  computed: {
+    ...mapGetters({
+      cartProducts: "cart/cartProducts",
+    }),
+  },
   methods: {
+    ...mapActions({
+      addCartProduct: "cart/addCartProduct",
+      deleteCartProduct: "cart/deleteCartProduct",
+    }),
+    addProduct(product) {
+      this.addCartProduct(product);
+    },
+
+    deleteProduct(product) {
+      this.deleteCartProduct(product);
+    },
     toggleDrop() {
       if (!this.isShowMenu) {
         this.isShowMenu = true;

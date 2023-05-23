@@ -301,6 +301,23 @@
     background-color: $pink-color-light;
     }
   }
+  &__indicator {
+      position: absolute;
+      height: 26px;
+      width: 26px;
+      box-shadow: 0px 0px 40px 2px rgb(0 0 0 / 14%);
+      border-radius:50%;
+      background:$pink_text-color;
+      text-align:center;
+      font: size 18px;
+      color:$pink-color-light;
+      margin-left: 20px;
+      margin-top: -14px;
+      &-parent {
+        position: relative;
+      }
+  }
+
 }
 
 
