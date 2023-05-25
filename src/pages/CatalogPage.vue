@@ -21,8 +21,7 @@
       </nav>
     </div>
   </section>
-
-  <ProductsList class="goods__card"></ProductsList>
+  <div class="goods__box"><ProductsList></ProductsList></div>
 
   <section class="advantage">
     <div class="advantage__wrapp">

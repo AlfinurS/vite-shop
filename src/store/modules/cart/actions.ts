@@ -25,6 +25,16 @@ export default {
     commit("SET_CART_PRODUCTS", result);
   },
 
+  // Удалить товар полностью из корзины
+  removeCartProduct: ({ commit, state }, product) => {
+    const result = JSON.parse(JSON.stringify(state.cartProducts));
+    const productFind = result.find((item) => item.id === product.id);
+    if (productFind) {
+      result.splice(result.indexOf(productFind), 1);
+    }
+    commit("SET_CART_PRODUCTS", result);
+  },
+
   // Сбросить все значения модуля авторизации
   reset: ({ commit }) => {
     commit("RESET");

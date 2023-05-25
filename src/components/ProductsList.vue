@@ -1,16 +1,14 @@
 <template>
-  <div class="goods box">
-    <div class="catalog">
-      <ul class="catalog__list">
-        <li
-          class="catalog__item"
-          v-for="product in filteredProducts"
-          :key="product.id"
-        >
-          <ItemProduct :dataProps="product"></ItemProduct>
-        </li>
-      </ul>
-    </div>
+  <div class="catalog goods__card">
+    <ul class="catalog__list">
+      <li
+        class="catalog__item"
+        v-for="product in filteredProducts"
+        :key="product.id"
+      >
+        <ItemProduct :dataProps="product"></ItemProduct>
+      </li>
+    </ul>
   </div>
 </template>
 

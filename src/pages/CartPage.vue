@@ -38,10 +38,10 @@
           >
             <router-link
               :to="{ name: 'ProductPage', params: { id: product.id } }"
-              class=""
+              class="cart__image-wrapper link"
             >
               <img
-                class="cart__image-wrapper"
+                class="cart__image"
                 :src="`img/new_product/${product.image}`"
                 :alt="product.title"
               />
@@ -49,50 +49,69 @@
 
             <div class="cart__content-wrapp">
               <div class="cart__name-wrapp">
-                <h2 class="cart__content-name">{{ product.title }}</h2>
+                {{ product.title }}
               </div>
               <ul class="cart__content-list">
                 <li class="cart__content-item">
                   Price:
+                  <span class="cart__content-pink">$ {{ product.price }}</span>
+                </li>
+                <li class="cart__content-item">
+                  Total price:
                   <span class="cart__content-pink"
                     >$ {{ product.price * product.quantity }}</span
                   >
                 </li>
-                <li class="cart__content-item">
+                <li class="cart__content-item cart__content-item--count">
                   Quantity:
-                  <button
-                    @click="deleteProduct(product)"
-                    class="cart__btn"
-                    type="button"
-                  >
-                    <img
-                      src="/img/svg/ic_round-minus.svg"
-                      alt="minus"
-                      width="24"
-                      height="24"
-                    />
-                  </button>
-
-                  <span class="cart__content-text">{{ product.quantity }}</span>
-                  <button
-                    @click="addProduct(product)"
-                    class="cart__btn"
-                    type="button"
-                  >
-                    <img
-                      src="/img/svg/ic_round-plus.svg"
-                      alt="plus"
-                      width="24"
-                      height="24"
-                    />
-                  </button>
+                  <div class="cart__item-btns">
+                    <button
+                      @click="deleteProduct(product)"
+                      class="cart__btn"
+                      type="button"
+                    >
+                      <img
+                        src="/img/svg/ic_round-minus.svg"
+                        alt="minus"
+                        width="22"
+                        height="22"
+                      />
+                    </button>
+                    <span class="cart__content-text">{{
+                      product.quantity
+                    }}</span>
+                    <button
+                      @click="addProduct(product)"
+                      class="cart__btn"
+                      type="button"
+                    >
+                      <img
+                        src="/img/svg/ic_round-plus.svg"
+                        alt="plus"
+                        width="22"
+                        height="22"
+                      />
+                    </button>
+                  </div>
                 </li>
               </ul>
+              <button
+                class="cart__close-img link"
+                type="button"
+                @click="removeProduct(product)"
+              >
+                <img
+                  src="/img/svg/close.svg"
+                  alt="close"
+                  width="16"
+                  height="16"
+                />
+              </button>
             </div>
           </li>
         </ul>
       </div>
-      <div class="cart__form-box">
+      <div class="cart__form-box" v-if="cartProducts.length !== 0">
         <form action="#" class="form">
           <fieldset class="form-fieldest">
             <legend class="form-headline">shipping adress</legend>
@@ -119,17 +138,14 @@
         <div class="cart__order-wrapp">
           <div class="cart__order-box">
             <div class="cart__order">
-              <div class="cart__text-wrapp">
-                <span class="cart__text-small">sub total</span>
-                <span class="cart__text-small"></span>
-              </div>
               <div class="cart__text-wrapp cart__text-wrapp--end">
-                <span class="cart__order-text">grand total</span>&nbsp;
-                <span
+                <span class="cart__order-text">grand total</span>
+                <p
                   class="cart__order-text cart__order-pink"
                   v-if="renderCart !== 0"
-                  >{{ renderCart }}</span
                 >
+                  $ {{ renderCart }}
+                </p>
               </div>
             </div>
           </div>
@@ -184,6 +200,7 @@ export default defineComponent({
     ...mapActions({
       addCartProduct: "cart/addCartProduct",
       deleteCartProduct: "cart/deleteCartProduct",
+      removeCartProduct: "cart/removeCartProduct",
     }),
 
     addProduct(product) {
@@ -192,6 +209,10 @@ export default defineComponent({
 
     deleteProduct(product) {
       this.deleteCartProduct(product);
+    },
+
+    removeProduct(product) {
+      this.removeCartProduct(product);
     },
   },
 });
